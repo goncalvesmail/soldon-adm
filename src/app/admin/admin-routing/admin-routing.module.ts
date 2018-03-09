@@ -5,6 +5,7 @@ import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { AdminContentComponent } from '../admin-content/admin-content.component';
+import { ListarClientesComponent } from '@components/listar-clientes/listar-clientes.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,9 @@ import { AdminContentComponent } from '../admin-content/admin-content.component'
           }, {
             path: 'content',
             component: AdminContentComponent
-          }
+          },
+          { path: 'clientes',
+            component: ListarClientesComponent }
         ]
       }
     ])

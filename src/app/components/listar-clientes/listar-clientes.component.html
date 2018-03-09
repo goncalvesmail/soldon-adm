@@ -1,0 +1,10 @@
+<h2>Clientes</h2>
+
+<ul class="clientes">
+  <li *ngFor="let cliente of clientes" (click)="onSelect(cliente)"
+    [class.selected]="cliente === clienteSelecionado">
+    <span class="badge">{{cliente.id}}</span>
+    <span>{{cliente.nome}}</span>
+    <button class="delete" (click)="delete(cliente); $event.stopPropagation()">x</button>
+  </li>
+</ul>
