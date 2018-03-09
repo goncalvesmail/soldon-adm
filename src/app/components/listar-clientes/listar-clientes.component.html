@@ -1,10 +1,15 @@
-<h2>Clientes</h2>
-
-<ul class="clientes">
-  <li *ngFor="let cliente of clientes" (click)="onSelect(cliente)"
-    [class.selected]="cliente === clienteSelecionado">
-    <span class="badge">{{cliente.id}}</span>
-    <span>{{cliente.nome}}</span>
-    <button class="delete" (click)="delete(cliente); $event.stopPropagation()">x</button>
-  </li>
-</ul>
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>
+            Clientes
+            <small>Control panel</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </section>  
+    <section class="content">
+        <h1>Teste</h1>
+    </section>
+</div>

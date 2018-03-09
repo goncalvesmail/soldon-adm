@@ -2,12 +2,14 @@ import { Component, OnInit } from '@angular/core';
 
 import {Cliente} from '@models/cliente'
 
+// declare var AdminLTE: any;
+
 @Component({
   selector: 'app-listar-clientes',
-  //templateUrl: './listar-clientes.component.html',
-  template: `
-    <h1> Clientes </h1>
-  `,
+  templateUrl: './listar-clientes.component.html',
+  // template: `
+  //   <h1> Clientes </h1>
+  // `,
   styleUrls: ['./listar-clientes.component.css']
 })
 export class ListarClientesComponent implements OnInit {
@@ -18,8 +20,9 @@ export class ListarClientesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    //AdminLTE.init();
     console.log('Passou no ngOnInt')
-    this.getClientes()
+    //this.getClientes()
   }
 
   getClientes() {
