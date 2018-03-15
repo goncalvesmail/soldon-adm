@@ -1,0 +1,9 @@
+{
+  "clientes":[
+    {"id": 1, "nome": "Daniel Gonçalves", "email":"t@t.com"},
+    {"id": 2, "nome": "Vandecio", "email":"vandecio@t.com"},
+    {"id": 3, "nome": "João Paulo", "email":"jp@t.com"},
+    {"id": 4, "nome": "Karlos com K", "email":"k@t.com"},
+    {"id": 5, "nome": "Sávio Benevides", "email":"savio@t.com"}
+  ]
+}

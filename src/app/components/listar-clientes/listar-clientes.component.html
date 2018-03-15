@@ -1,15 +1,50 @@
 <div class="content-wrapper">
-    <section class="content-header">
-        <h1>
-            Clientes
-            <small>Control panel</small>
-        </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
-        </ol>
-    </section>  
-    <section class="content">
-        <h1>Teste</h1>
-    </section>
+  <section class="content-header">
+    <h1>
+      Clientes
+      <small>Cadastro de Clientes</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li>
+        <a href="#">
+          <i class="fa fa-dashboard"></i> Home</a>
+      </li>
+      <li class="active">Clientes</li>
+    </ol>
+  </section>
+  <section class="content">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="box">
+          <div class="box-header">
+            <h3 class="box-title">Hover Data Table</h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <table id="example2" class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>E-Mail</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let cliente of clientes">
+                  <th>{{cliente.nome}}</th>
+                  <th>{{cliente.email}}</th>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Nome</th>
+                  <th>E-Mail</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <!-- /.box-body -->
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

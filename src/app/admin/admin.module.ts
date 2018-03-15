@@ -9,7 +9,6 @@ import { AdminComponent } from './admin.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdminDashboard2Component } from './admin-dashboard2/admin-dashboard2.component';
-import { ListarClientesComponent } from '@components/listar-clientes/listar-clientes.component';
 
 @NgModule({
   imports: [
@@ -24,9 +23,8 @@ import { ListarClientesComponent } from '@components/listar-clientes/listar-clie
     AdminFooterComponent,
     AdminControlSidebarComponent,
     AdminDashboard1Component,
-    AdminDashboard2Component,
-    ListarClientesComponent
-  ],
+    AdminDashboard2Component
+    ],
   exports: [AdminComponent]
 })
 export class AdminModule { }
