@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'
 
 import {Cliente} from '@models/cliente'
 import {ClientesService} from '@services/clientes.service'
@@ -14,7 +15,9 @@ export class ListarClientesComponent implements OnInit {
   clienteSelecionado: Cliente;
 
   constructor(
-    private service: ClientesService) { }
+    private service: ClientesService,
+    public router: Router) {
+  }
 
   ngOnInit() {
     this.getClientes()
@@ -24,8 +27,8 @@ export class ListarClientesComponent implements OnInit {
     this.service.getClientes().then((clientes: Cliente[]) => this.clientes = clientes);
   }
 
-  onSelect(cliente: Cliente): void {
-    this.clienteSelecionado = cliente;
+  gotoDetail(cliente: Cliente): void {
+    this.router.navigate(['/admin/detalhe-cliente', cliente.id]);
   }
 
   delete(cliente: Cliente) {

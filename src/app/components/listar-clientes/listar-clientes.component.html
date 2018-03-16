@@ -29,17 +29,11 @@
                 </tr>
               </thead>
               <tbody>
-                <tr *ngFor="let cliente of clientes">
-                  <th>{{cliente.nome}}</th>
-                  <th>{{cliente.email}}</th>
+                <tr *ngFor="let cliente of clientes" (click)="gotoDetail(cliente)">
+                  <td>{{cliente.nome}}</td>
+                  <td>{{cliente.email}}</td>
                 </tr>
               </tbody>
-              <tfoot>
-                <tr>
-                  <th>Nome</th>
-                  <th>E-Mail</th>
-                </tr>
-              </tfoot>
             </table>
           </div>
           <!-- /.box-body -->

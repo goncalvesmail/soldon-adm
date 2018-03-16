@@ -33,7 +33,7 @@ import { DetalheClienteComponent } from '@components/detalhe-cliente/detalhe-cli
           { path: 'clientes',
             component: ListarClientesComponent }
           ,
-          { path: 'detalhe-cliente',
+          { path: 'detalhe-cliente/:id',
             component: DetalheClienteComponent }
         ]
       }
